@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.Dialexa VR.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\willi\Documents\Workspace\Unity\Dialexa VR\.idea\.idea.Dialexa VR\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -19,8 +19,10 @@ namespace User
             var forward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
             var sideways = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 
+            var g = Vector3.down * (9.8f * Time.deltaTime);
+
             var t = transform;
-            _controller.Move(t.forward * forward + t.right * sideways);
+            _controller.Move(t.forward * forward + t.right * sideways + g);
         }
     }
 }

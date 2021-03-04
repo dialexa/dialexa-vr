@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usernameVariable: {fileID: 11400000, guid: 6d9753cab39261d4a9b3c22b26510a87, type: 2}
   roomStateVariable: {fileID: 11400000, guid: cefbff4b9d5040a4dbedcdf99ef8a419, type: 2}
+  serverUrlVariable: {fileID: 11400000, guid: 28a2f0ecfa12dcf4a9562ef5c385ce8b, type: 2}
   serverConnected:
     m_PersistentCalls:
       m_Calls:

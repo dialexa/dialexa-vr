@@ -12,6 +12,7 @@ namespace Network
     {
         public StringVariable usernameVariable;
         public RoomStateVariable roomStateVariable;
+        public StringVariable serverUrlVariable;
         public UnityEvent serverConnected;
         
         private WebSocket _ws;
@@ -21,7 +22,7 @@ namespace Network
         
         public void Connect()
         {
-            _ws = WebSocketFactory.CreateInstance($"ws://localhost:8080/join/{usernameVariable.Value}");
+            _ws = WebSocketFactory.CreateInstance($"{serverUrlVariable.Value}/join/{usernameVariable.Value}");
 
             _ws.OnOpen += () =>
             {

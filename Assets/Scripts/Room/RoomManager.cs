@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -31,6 +32,22 @@ namespace Room
                     
                 _users[n].SetUserState(roomStateUser);
             }
+
+            var toRemove = new List<string>();
+
+            foreach (var keyValuePair in _users)
+            {
+                if (roomState.Users.All(u => u.Name != keyValuePair.Key))
+                {
+                    toRemove.Add(keyValuePair.Key);
+                }
+            }
+            
+            toRemove.ForEach(u =>
+            {
+                Destroy(_users[u].gameObject);
+                _users.Remove(u);
+            });
         }
 
         private NetworkUser CreateNetworkUser(string userName)

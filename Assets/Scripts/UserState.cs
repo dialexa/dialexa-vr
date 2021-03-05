@@ -15,4 +15,5 @@ public class UserState
     public string Name;
     public V3 Pos;
     public V3 Rot;
+    public bool Active;
 }

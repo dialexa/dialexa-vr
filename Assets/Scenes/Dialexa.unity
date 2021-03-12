@@ -591,6 +591,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 97172074218559306, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+      propertyPath: serverUrlVariable
+      value: 
+      objectReference: {fileID: 11400000, guid: 28a2f0ecfa12dcf4a9562ef5c385ce8b, type: 2}
+    - target: {fileID: 97172074218559306, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
       propertyPath: eventReceived.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5744,24 +5748,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 699664562253530939, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
   m_PrefabInstance: {fileID: 1026552756499940807}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &919132148816795718 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 215721547577253249, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
-  m_PrefabInstance: {fileID: 1026552756499940807}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &919132148816795719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148816795718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 21.08, y: 11.29, z: 1}
-  m_Center: {x: 0, y: 6.01, z: 0}
 --- !u!1001 &1026552756499940807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5816,22 +5802,6 @@ PrefabInstance:
     - target: {fileID: 699664562253530939, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1093895011906887494, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 12.039999
-      objectReference: {fileID: 0}
-    - target: {fileID: 7346489445410556986, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7346489445410556986, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
-      propertyPath: MaxDistance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7346489445410556986, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.615
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c3c35c15258e8c408efbef1f5de4fb9, type: 3}

@@ -1,5 +1,6 @@
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Utils
 {

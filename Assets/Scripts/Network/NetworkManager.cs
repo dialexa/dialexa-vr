@@ -14,11 +14,13 @@ namespace Network
         public RoomStateVariable roomStateVariable;
         public StringVariable serverUrlVariable;
         public UnityEvent serverConnected;
+        public UnityEvent<string> eventReceived;
         
         private WebSocket _ws;
         private bool _connected;
         private bool _connectedInvoked;
         private RoomState _newRoomState;
+        private string _newNetworkEvent;
         
         public void Connect()
         {
@@ -33,9 +35,15 @@ namespace Network
             _ws.OnMessage += (byte[] msg) =>
             {
                 var message = Encoding.UTF8.GetString(msg);
-                // Debug.Log("WS received message: " + message);
-                var roomState = JsonUtility.FromJson<RoomState>(message);
-                _newRoomState = roomState;
+                if (message.Contains("(event"))
+                {
+                    _newNetworkEvent = message.Replace("(event)", "");
+                }
+                else
+                {
+                    var roomState = JsonUtility.FromJson<RoomState>(message);
+                    _newRoomState = roomState;
+                }
             };
             
             _ws.Connect();
@@ -47,8 +55,20 @@ namespace Network
             _ws.Send(Encoding.UTF8.GetBytes(message));
         }
 
+        public void SendEvent(string eventName)
+        {
+            if (_ws == null || _ws.GetState() != WebSocketState.Open) return;
+            _ws.Send(Encoding.UTF8.GetBytes("(event)" + eventName));
+        }
+
         private void Update()
         {
+            if (_newNetworkEvent != null)
+            {
+                eventReceived.Invoke(_newNetworkEvent);
+                _newNetworkEvent = null;
+            }
+            
             if (_newRoomState != null)
             {
                 roomStateVariable.SetValue(_newRoomState);

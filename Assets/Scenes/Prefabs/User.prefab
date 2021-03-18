@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 373556239032312189}
   - component: {fileID: 373556239032312190}
   - component: {fileID: 1498131927}
+  - component: {fileID: 2627583726831619398}
   m_Layer: 0
   m_Name: User
   m_TagString: Untagged
@@ -79,6 +80,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionVariable: {fileID: 11400000, guid: 1af7fa7829f28e8418bb10fb959a7b4f, type: 2}
   rotationVariable: {fileID: 11400000, guid: 7cacd58905079fc43bd4dd66c4e0c26c, type: 2}
+--- !u!114 &2627583726831619398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373556239032312188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0285379375f999641b92c9ae757a8f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionTextChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: a7afd6f2380841949bb8ed5a80c51908, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.String, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &373556239154642929
 GameObject:
   m_ObjectHideFlags: 0

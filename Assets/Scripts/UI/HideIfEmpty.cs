@@ -15,6 +15,10 @@ namespace UI
 
         public void StringChanged(string s)
         {
+            if (!_group)
+            {
+                _group = GetComponent<CanvasGroup>();
+            }
             _group.alpha = string.IsNullOrEmpty(s) ? 0 : 1;
         }
     }

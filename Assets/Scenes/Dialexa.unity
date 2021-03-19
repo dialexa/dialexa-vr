@@ -633,7 +633,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 97172074218559306, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
   m_PrefabInstance: {fileID: 77574737}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1815818761}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d71cd6adeb01c1c4f80feb322fbdccce, type: 3}
@@ -5190,6 +5190,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1784193781261411673, guid: a3cd88dd47ad1c54d8de272597ca69f8, type: 3}
   m_PrefabInstance: {fileID: 1767314567}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1815818761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 97172074218559307, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+  m_PrefabInstance: {fileID: 77574737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815818762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815818761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ee4ac9d5119ae40b3683276e00026c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  command: laser-pos
 --- !u!1 &1846947145
 GameObject:
   m_ObjectHideFlags: 0

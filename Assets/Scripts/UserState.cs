@@ -16,4 +16,6 @@ public class UserState
     public V3 Pos;
     public V3 Rot;
     public bool Active;
+    public V3 LaserPos;
+    public bool LaserActive;
 }

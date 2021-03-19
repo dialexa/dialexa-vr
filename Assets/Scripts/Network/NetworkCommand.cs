@@ -16,12 +16,13 @@ namespace Network
 
         public void Sync(Vector3 vector)
         {
-            Sync($"{command}|{JsonUtility.ToJson(vector)}");
+            Sync(JsonUtility.ToJson(vector));
         }
 
         public void Sync(string s)
         {
-            _networkManager.Send(s);
+            Debug.Log(command + " : " + s);
+            _networkManager.Send($"{command}|{s}");
         }
     }
 }

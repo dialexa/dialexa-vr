@@ -29,7 +29,7 @@ namespace Room
                 
                 if (!_users.ContainsKey(n))
                     _users.Add(n, CreateNetworkUser(n));
-                    
+
                 _users[n].SetUserState(roomStateUser);
             }
 

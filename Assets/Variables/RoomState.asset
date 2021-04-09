@@ -15,13 +15,43 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    Users: []
+    Users:
+    - Name: test
+      Pos:
+        X: 2.1131377
+        Y: 2.0799994
+        Z: 3.0963383
+      Rot:
+        X: 0
+        Y: 280.80838
+        Z: 0
+      Active: 1
+      LaserPos:
+        X: -74.511765
+        Y: 65.15861
+        Z: 14.225164
+      LaserActive: 0
   _changed: {fileID: 11400000, guid: 4cec0785dba92094692b01c40dbe321a, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue:
-    Users: []
+    Users:
+    - Name: test
+      Pos:
+        X: 2.1131377
+        Y: 2.0799994
+        Z: 3.0963383
+      Rot:
+        X: 0
+        Y: 280.80838
+        Z: 0
+      Active: 1
+      LaserPos:
+        X: -74.511765
+        Y: 65.15861
+        Z: 14.225164
+      LaserActive: 0
   _initialValue:
     Users: []
   _preChangeTransformers: []

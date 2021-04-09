@@ -22,6 +22,7 @@ namespace Network
         
         public void Connect()
         {
+            Debug.Log("Attempting to connect.");
             _ws = WebSocketFactory.CreateInstance($"{serverUrlVariable.Value}/join/{usernameVariable.Value}");
 
             _ws.OnOpen += () =>

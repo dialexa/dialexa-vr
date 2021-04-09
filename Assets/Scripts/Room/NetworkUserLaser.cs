@@ -15,7 +15,7 @@ namespace Room
     // Update is called once per frame
     void Update () {
       lr.SetPosition(0, transform.localPosition);
-      lr.SetPosition(1, transform.InverseTransformPoint(laserPosition));
+      lr.SetPosition(1, laserPosition);
     }
   }
 }

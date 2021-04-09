@@ -700,16 +700,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1439340125, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1646568521}
+    - target: {fileID: 1439340125, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Sync
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439340125, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Network.NetworkPlayerRot, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1439340126, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 393252956}
+      objectReference: {fileID: 1646568522}
     - target: {fileID: 1439340126, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Sync
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439340126, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Network.NetworkPlayerPos, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1439340127, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
       propertyPath: command
@@ -771,7 +783,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Network Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1439340127, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+    - {fileID: 1439340128, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
 --- !u!1001 &79359574
 PrefabInstance:
@@ -1570,17 +1584,6 @@ Transform:
   m_Father: {fileID: 620771744}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &393252956 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1439340127, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
-  m_PrefabInstance: {fileID: 77574737}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ee4ac9d5119ae40b3683276e00026c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &475629604
 GameObject:
   m_ObjectHideFlags: 0
@@ -5060,6 +5063,135 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 373556239154642932, guid: d355f91dd803a4d408ac52c5cd723fa9, type: 3}
   m_PrefabInstance: {fileID: 251333527}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1646568511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 97172074218559307, guid: d16e580788d7e1a4c8114d4ce490de89, type: 3}
+  m_PrefabInstance: {fileID: 77574737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1646568512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23dc7bd294eb49b9bd02ea012c824a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1646568518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775f7409782fa4b619d9153405dd1c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1646568512}
+        m_TargetAssemblyTypeName: Network.NetworkLaserActive, Assembly-CSharp
+        m_MethodName: Sync
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 7830c27ac1e9d4347b17cfb763951004, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &1646568519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29aeaa1c604764b2682690b8c0285011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1646568520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439ab88098c3143a992d4119f3bc4a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1646568519}
+        m_TargetAssemblyTypeName: Network.NetworkLaserPos, Assembly-CSharp
+        m_MethodName: Sync
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: c63090d5d5b2e4ac48f3edf5322f6265, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &1646568521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a3d8e7a8a204dcbba81fc263318053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1646568522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646568511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6845f742d5146e382b493b12768156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1650361078
 PrefabInstance:
   m_ObjectHideFlags: 0

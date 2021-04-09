@@ -17,10 +17,11 @@ namespace Room
 
             text.text = state.Name;
 
-            laser.enabled = state.LaserActive;
-
             if (state.LaserActive) {
                 laser.laserPosition = new Vector3(state.LaserPos.X, state.LaserPos.Y, state.LaserPos.Z);
+            } else {
+                // Creates a line renderer of length = 0 so that it doesn't stay stuck in place
+                laser.laserPosition = transform.position;
             }
             
             if (!state.Active)

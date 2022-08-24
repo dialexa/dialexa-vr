@@ -366,6 +366,233 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Mouse & Keyboard"",
+            ""id"": ""fdc3e533-f4b0-4cb9-8184-9a8563e077ea"",
+            ""actions"": [
+                {
+                    ""name"": ""MouseX"",
+                    ""type"": ""Value"",
+                    ""id"": ""df70e94b-0b6c-427e-b0c5-ead1c9527c69"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseY"",
+                    ""type"": ""Value"",
+                    ""id"": ""44376c89-81d3-48e2-a2b5-2eda1619ae12"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""0c1db2c9-57b3-499a-ae41-3c1c704a5205"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseDelta"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""5ece4b78-10c1-4250-80fe-2019f1d75f10"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MouseClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""77a43c56-a87f-4518-a2fc-73236c955d20"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Point"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""3b2a6248-bba4-4bc7-9c3b-6154766061c4"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ab0508fd-bc5e-4afd-aa6c-2a06ca730ef8"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""MouseX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1b92a07b-cfaf-4748-a1b7-08587682ac32"",
+                    ""path"": ""<Mouse>/delta/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""MouseY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""81cc6cfd-62d9-4b08-860b-a9eea9acaaa7"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""df07f2d0-7981-40b5-8008-95e39f6ec7b9"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e3d3089a-c5cc-4430-8abd-1b1460af2360"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""580f9fb1-5a8c-4370-bf1d-9e1d5bad7dae"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""10be8758-bc93-4148-be2f-074b72915e8c"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""a1e02215-174d-4fd5-b110-257d280efd06"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""347dead1-d4c0-413a-b07c-77f47d6cce34"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e618b1a8-bcd2-43d5-a017-5db4af032f13"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""107638c4-b1ce-4c24-96dd-094eda9aa6e8"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""181020e2-d8a1-4b13-8046-62f7624f0e77"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99855c8b-4523-478c-95f6-8106d7c9a903"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""MouseDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""26c5fe61-fcf3-41aa-8db5-d6fb249aa4af"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse & Keyboard"",
+                    ""action"": ""MouseClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f75f8e68-7793-485f-9c18-1f27cd79108b"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Point"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -381,6 +608,22 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
                 {
                     ""devicePath"": ""<XRController>"",
                     ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Mouse & Keyboard"",
+            ""bindingGroup"": ""Mouse & Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": true,
                     ""isOR"": false
                 }
             ]
@@ -409,6 +652,14 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
         m_XRIRightHand_HapticDevice = m_XRIRightHand.FindAction("Haptic Device", throwIfNotFound: true);
         m_XRIRightHand_Teleport = m_XRIRightHand.FindAction("Teleport", throwIfNotFound: true);
         m_XRIRightHand_TeleportSelect = m_XRIRightHand.FindAction("Teleport Select", throwIfNotFound: true);
+        // Mouse & Keyboard
+        m_MouseKeyboard = asset.FindActionMap("Mouse & Keyboard", throwIfNotFound: true);
+        m_MouseKeyboard_MouseX = m_MouseKeyboard.FindAction("MouseX", throwIfNotFound: true);
+        m_MouseKeyboard_MouseY = m_MouseKeyboard.FindAction("MouseY", throwIfNotFound: true);
+        m_MouseKeyboard_Movement = m_MouseKeyboard.FindAction("Movement", throwIfNotFound: true);
+        m_MouseKeyboard_MouseDelta = m_MouseKeyboard.FindAction("MouseDelta", throwIfNotFound: true);
+        m_MouseKeyboard_MouseClick = m_MouseKeyboard.FindAction("MouseClick", throwIfNotFound: true);
+        m_MouseKeyboard_Point = m_MouseKeyboard.FindAction("Point", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -667,6 +918,79 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
         }
     }
     public XRIRightHandActions @XRIRightHand => new XRIRightHandActions(this);
+
+    // Mouse & Keyboard
+    private readonly InputActionMap m_MouseKeyboard;
+    private IMouseKeyboardActions m_MouseKeyboardActionsCallbackInterface;
+    private readonly InputAction m_MouseKeyboard_MouseX;
+    private readonly InputAction m_MouseKeyboard_MouseY;
+    private readonly InputAction m_MouseKeyboard_Movement;
+    private readonly InputAction m_MouseKeyboard_MouseDelta;
+    private readonly InputAction m_MouseKeyboard_MouseClick;
+    private readonly InputAction m_MouseKeyboard_Point;
+    public struct MouseKeyboardActions
+    {
+        private @XRInputAction m_Wrapper;
+        public MouseKeyboardActions(@XRInputAction wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MouseX => m_Wrapper.m_MouseKeyboard_MouseX;
+        public InputAction @MouseY => m_Wrapper.m_MouseKeyboard_MouseY;
+        public InputAction @Movement => m_Wrapper.m_MouseKeyboard_Movement;
+        public InputAction @MouseDelta => m_Wrapper.m_MouseKeyboard_MouseDelta;
+        public InputAction @MouseClick => m_Wrapper.m_MouseKeyboard_MouseClick;
+        public InputAction @Point => m_Wrapper.m_MouseKeyboard_Point;
+        public InputActionMap Get() { return m_Wrapper.m_MouseKeyboard; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MouseKeyboardActions set) { return set.Get(); }
+        public void SetCallbacks(IMouseKeyboardActions instance)
+        {
+            if (m_Wrapper.m_MouseKeyboardActionsCallbackInterface != null)
+            {
+                @MouseX.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseX;
+                @MouseX.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseX;
+                @MouseX.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseX;
+                @MouseY.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseY;
+                @MouseY.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseY;
+                @MouseY.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseY;
+                @Movement.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMovement;
+                @MouseDelta.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseDelta;
+                @MouseDelta.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseDelta;
+                @MouseDelta.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseDelta;
+                @MouseClick.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseClick;
+                @MouseClick.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseClick;
+                @MouseClick.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnMouseClick;
+                @Point.started -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnPoint;
+                @Point.performed -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnPoint;
+                @Point.canceled -= m_Wrapper.m_MouseKeyboardActionsCallbackInterface.OnPoint;
+            }
+            m_Wrapper.m_MouseKeyboardActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @MouseX.started += instance.OnMouseX;
+                @MouseX.performed += instance.OnMouseX;
+                @MouseX.canceled += instance.OnMouseX;
+                @MouseY.started += instance.OnMouseY;
+                @MouseY.performed += instance.OnMouseY;
+                @MouseY.canceled += instance.OnMouseY;
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @MouseDelta.started += instance.OnMouseDelta;
+                @MouseDelta.performed += instance.OnMouseDelta;
+                @MouseDelta.canceled += instance.OnMouseDelta;
+                @MouseClick.started += instance.OnMouseClick;
+                @MouseClick.performed += instance.OnMouseClick;
+                @MouseClick.canceled += instance.OnMouseClick;
+                @Point.started += instance.OnPoint;
+                @Point.performed += instance.OnPoint;
+                @Point.canceled += instance.OnPoint;
+            }
+        }
+    }
+    public MouseKeyboardActions @MouseKeyboard => new MouseKeyboardActions(this);
     private int m_XRSchemeIndex = -1;
     public InputControlScheme XRScheme
     {
@@ -674,6 +998,15 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
         {
             if (m_XRSchemeIndex == -1) m_XRSchemeIndex = asset.FindControlSchemeIndex("XR");
             return asset.controlSchemes[m_XRSchemeIndex];
+        }
+    }
+    private int m_MouseKeyboardSchemeIndex = -1;
+    public InputControlScheme MouseKeyboardScheme
+    {
+        get
+        {
+            if (m_MouseKeyboardSchemeIndex == -1) m_MouseKeyboardSchemeIndex = asset.FindControlSchemeIndex("Mouse & Keyboard");
+            return asset.controlSchemes[m_MouseKeyboardSchemeIndex];
         }
     }
     public interface IXRIHeadActions
@@ -700,5 +1033,14 @@ public partial class @XRInputAction : IInputActionCollection2, IDisposable
         void OnHapticDevice(InputAction.CallbackContext context);
         void OnTeleport(InputAction.CallbackContext context);
         void OnTeleportSelect(InputAction.CallbackContext context);
+    }
+    public interface IMouseKeyboardActions
+    {
+        void OnMouseX(InputAction.CallbackContext context);
+        void OnMouseY(InputAction.CallbackContext context);
+        void OnMovement(InputAction.CallbackContext context);
+        void OnMouseDelta(InputAction.CallbackContext context);
+        void OnMouseClick(InputAction.CallbackContext context);
+        void OnPoint(InputAction.CallbackContext context);
     }
 }

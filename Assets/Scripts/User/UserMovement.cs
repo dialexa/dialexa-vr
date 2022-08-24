@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace User
 {
@@ -7,6 +8,7 @@ namespace User
     public class UserMovement : MonoBehaviour
     {
         public float speed = 5.0f;
+        public InputAction movement;
         private CharacterController _controller;
 
         private void Awake()
@@ -14,10 +16,21 @@ namespace User
             _controller = GetComponent<CharacterController>();
         }
 
+        void OnEnable()
+        {
+            movement.Enable();
+        }
+
+        void OnDisable()
+        {
+            movement.Disable();
+        }
+
         private void Update()
         {
-            var forward = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-            var sideways = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            
+            var forward = movement.ReadValue<Vector2>().y * speed * Time.deltaTime;
+            var sideways = movement.ReadValue<Vector2>().x * speed * Time.deltaTime;
 
             var g = Vector3.down * (9.8f * Time.deltaTime);
 

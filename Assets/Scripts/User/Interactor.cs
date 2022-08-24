@@ -2,6 +2,7 @@ using System;
 using Room;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 namespace User
 {
@@ -12,7 +13,8 @@ namespace User
 
         private void Update()
         {
-            if (_currentInteractable && Input.GetMouseButtonDown(0))
+            var mouse = Mouse.current;
+            if (_currentInteractable && mouse.leftButton.wasPressedThisFrame)
                 _currentInteractable.TriggerInteraction();
         }
 

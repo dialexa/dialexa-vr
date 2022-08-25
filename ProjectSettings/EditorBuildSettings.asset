@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dialexa.unity
     guid: 9b09a41f63fb37549b3e0d41fb68438d
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c9fb45759ecb83544946be12b1aa72ca, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 61696572e6221934f9b869176b075ebc, type: 2}

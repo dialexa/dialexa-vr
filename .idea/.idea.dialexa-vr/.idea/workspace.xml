@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9e054f9-6c2b-4d16-a886-d15ea6c8b5e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dialexa-vr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dialexa-vr/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/Interactor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/Interactor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/MouseLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/MouseLook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/User/UserMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/User/UserMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XRI/Input Actions/XR Input Action.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XRI/Input Actions/XR Input Action.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XRI/Input Actions/XR Input Action.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XRI/Input Actions/XR Input Action.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="e9e054f9-6c2b-4d16-a886-d15ea6c8b5e6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
